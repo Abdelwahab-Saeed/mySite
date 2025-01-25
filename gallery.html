@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #7aacff;
+        }
+
+        h1{
+            width: 60%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 10%;
+            left: 50%;
+            overflow: hidden;
+            border: 5px solid #ffffff;
+            box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+            text-align: center;
+        }
+
+        .containerOne{
+            width: 85vmin;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            overflow: hidden;
+            border: 20px solid #ffffff;
+            box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+        }
+
+        .containerTwo{
+            width: 20%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 90%;
+            left: 50%;
+            overflow: hidden;
+            border: 5px solid #ffffff;
+            box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+            padding: 5px;
+        }
+        
+        .wrapper{
+            width: 100%;
+            display: flex;
+            animation: slide 16s infinite;
+        }
+
+        @keyframes slide{
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(0);
+            }
+            30%{
+                transform: translateX(-100%);
+            }
+            50%{
+                transform: translateX(-100%);
+            }
+            55%{
+                transform: translateX(-200%);
+            }
+            75%{
+                transform: translateX(-200%);
+            }
+            80%{
+                transform: translateX(-300%)
+            }
+            100%{
+                transform: translateX(-300%)
+            }
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .containerTwo .wrapper div{
+            /* display: inline-block; */
+            min-width: 100%;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Here is a list of countries I would like to visit</h1>
+    <div class="containerOne">
+        <div class="wrapper">
+            <img src="media/barcelona.jpg" alt="Upload failed">
+            <img src="media/italy.jpg" alt="Upload failed">
+            <img src="media/thailand.jpg" alt="Upload failed">
+            <img src="media/japan.jpg" alt="Upload failed">
+        </div>
+    </div>
+    <div class="containerTwo">
+        <div class="wrapper">
+            <div>Spain</div>
+            <div>Italy</div>
+            <div>Thailand</div>
+            <div>Japan</div>
+        </div>
+    </div>
+</body>
+</html>

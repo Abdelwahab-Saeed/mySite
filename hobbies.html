@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        * {
+            margin: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #CDC1FF;
+        }
+
+        .container {
+            background-color: #001A6E;
+            height: 100%;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            background-color: #CDC1FF;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #collection {
+            background-color: #001A6E;
+            height: 90%;
+            width: 80%;
+            margin-left: 15%;
+            
+        }
+
+        #sectionOne,
+        #sectionTwo {
+            background-color: #001A6E;
+            height: 30%;
+            margin: 5% auto;
+        }
+
+        figure{
+            width: 30%;
+            float: left;
+            position: relative;
+            padding: 0.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 90%;
+            height:200px;
+            border-radius: 10%;
+            padding-bottom: 2%;
+        }
+
+        img:hover {
+            transform: scale(1.3);
+        }
+
+        figcaption{
+            text-align: center;
+            background-color:rgba(30,30,200,0.3);
+            border-radius: 20px;
+            width: 70%;
+            padding: 15px;
+            border: 2px solid #ffffff;
+            box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> These are my favourite hobbies</h1>
+        <div id="collection">
+            <div id="sectionOne">
+                <figure>
+                    <img src="media/football.jpg" alt="">
+                    <figcaption> Watching football games </figcaption>
+                </figure>
+                <figure>
+                    <img src="media/movies.jpg" alt="">
+                    <figcaption> Watching movies </figcaption>
+                </figure>
+                <figure>
+                    <img src="media/vGames.jpg" alt="">
+                    <figcaption> Playing video games </figcaption>
+                </figure>
+            </div>
+            <div id="sectionTwo">
+                <figure>
+                    <img src="media/reading_2.jpg" alt="">
+                    <figcaption> Rading useful books </figcaption>
+                </figure>
+                <figure>
+                    <img src="media/walking.jpg" alt="">
+                    <figcaption> Walking around </figcaption>
+                </figure>
+                <figure>
+                    <img src="media/sleeping.jpg" alt="">
+                    <figcaption> Sleeping </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
