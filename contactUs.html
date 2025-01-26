@@ -14,7 +14,7 @@
         }
         
         body{
-            background-color: #A1D6CB;
+            background-color: #81BFDA;
         }
        
         #container {
@@ -53,7 +53,8 @@
         input[type="text"],
         input[type="email"]
         {
-            background-color: #A1D6CB;
+            background-color: #81BFDA;
+            font-size: 20px;
         }
 
         input[type="text"]:hover,
@@ -64,12 +65,13 @@
         }
 
         #feedBack {
-            background-color: #A1D6CB;
+            background-color: #81BFDA;
             border: none;
             border-bottom: 2px solid #000000;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
             width: 100%;
-            padding: 2%;
+            /* padding: 2%; */
         }
     
         #subBtn {
@@ -78,6 +80,7 @@
             color: white;
             font-size: 20px;
             cursor: pointer;
+            box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
         }
 
         #icons{
@@ -112,11 +115,11 @@
         <h1> Contact us if you need help </h1>
         <form action="thanks.html">
             <label for="name">Full name:</label><br>
-            <input type="text" name="name" id="name"><br>
+            <input type="text" name="name" id="name" placeholder="Please, fill in your full name"><br>
             <label for="mail">E-mail:</label><br>
-            <input type="email" name="mail" id="mail"><br>
+            <input type="email" name="mail" id="mail" placeholder="Please, fill in your email"><br>
             <label for="feedBack">Message:</label><br>
-            <textarea  id="feedBack" name="feedBack"></textarea><br>
+            <textarea  id="feedBack" name="feedBack" placeholder="Please, write your message here"></textarea><br>
             <input type="submit" id="subBtn">
         </form>
         <div id="icons">
